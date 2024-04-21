@@ -1,0 +1,124 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: black; */
+    font-family: "Madimi One", sans-serif;
+    /* background: url('https://wallpapers.com/images/hd/aesthetic-cloud-7y2nw0b00k5t9pec.jpg'); */
+    /* background: url('/bg.mp4'); */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    z-index: -1;
+}
+.all{
+    display: flex;
+    justify-content: center;
+}
+video{
+position: relative;
+z-index: -2;
+top: 0px;
+background-size: cover;
+}
+
+pre{
+    font-family: "Madimi One", sans-serif;
+}
+.card{
+    position: absolute;
+     top: 0px;
+    z-index: 2;
+    width: 460px;
+    margin: 50px auto;
+    text-align: center;
+    /* margin-top: 100px; */
+    color: white;
+    /* background-color:#0f2862; */
+    /* background: url('https://wallpapers.com/images/hd/aesthetic-cloud-7y2nw0b00k5t9pec.jpg'); */
+    background: url(city.jpeg);
+    background-position:center center;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+.searchbox{
+    display: flex;
+align-items: center;
+justify-content: space-around;
+/* position: fixed;
+z-index: 2; */
+}
+.searchbox input{
+    padding-left: 35px;
+padding-right: 35px;
+padding-top: 13px;
+padding-bottom: 13px;
+font-size: 20px;
+border-radius: 24px;
+margin-top: 20px;
+font-family: "Madimi One", sans-serif;
+margin-bottom: 10px;
+}
+.searchbox button{
+    padding: 10px;
+border-radius: 48px;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.searchbox button img{
+    width: 25px;
+height: 30px;
+}
+.error{
+    text-align: center;
+font-size: 2rem;
+margin-top: 15px;
+display: none;
+}
+.weather{
+    display: none;
+}
+.rain {
+    width: 160px;
+margin-top: 50px;
+}
+.temp{
+    font-size: 4.5rem;
+margin-bottom: 20px;
+}
+.city{
+    font-size: 2.2rem;
+margin-bottom: 30px;
+}
+.humwind{
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+font-family: "Madimi One", sans-serif;
+}
+.humid{
+display: flex;
+font-size: 1.2rem;
+margin-bottom: 20px;
+font-family: "Madimi One", sans-serif;
+}
+.humid img{
+width: 60px;
+height: 60px;
+margin-right: 10px;
+}
+.wind{
+display: flex;
+font-size: 1.2rem;
+margin-bottom: 20px;
+font-family: "Madimi One", sans-serif;
+}
+.wind img{
+   width: 60px;
+margin-right: 10px;
+}

@@ -4,157 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Madimi+On e&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            /* background-color: black; */
-            font-family: "Madimi One", sans-serif;
-            /* background: url('https://wallpapers.com/images/hd/aesthetic-cloud-7y2nw0b00k5t9pec.jpg'); */
-            /* background: url('/bg.mp4'); */
-            background-repeat: no-repeat;
-            /* background-size: cover; */
-            z-index: -1;
-        }
-        .all{
-            display: flex;
-            justify-content: center;
-        }
-       video{
-        position: relative;
-        z-index: -2;
-        top: 0px;
-    background-size: cover;
-       }
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+}
 
-        pre{
-            font-family: "Madimi One", sans-serif;
-        }
-        .card{
-            position: absolute;
-             top: 0px;
-            z-index: 2;
-            width: 460px;
-            margin: 50px auto;
-            text-align: center;
-            /* margin-top: 100px; */
-            color: white;
-            /* background-color:#0f2862; */
-            /* background: url('https://wallpapers.com/images/hd/aesthetic-cloud-7y2nw0b00k5t9pec.jpg'); */
-            background: url('/city.jpeg');
-            background-position:center center;
-            background-size: cover;
-            justify-content: center;
-            align-content: center;
-        }
-        .searchbox{
-            display: flex;
-  align-items: center;
-  justify-content: space-around;
-  /* position: fixed;
-  z-index: 2; */
-        }
-        .searchbox input{
-            padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  font-size: 20px;
-  border-radius: 24px;
-  margin-top: 20px;
-  font-family: "Madimi One", sans-serif;
-  margin-bottom: 10px;
-        }
-        .searchbox button{
-            padding: 10px;
-  border-radius: 48px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-        }
-        .searchbox button img{
-            width: 25px;
-  height: 30px;
-        }
-        .error{
-            text-align: center;
-  font-size: 2rem;
-  margin-top: 15px;
-  display: none;
-        }
-        .weather{
-            display: none;
-        }
-        .rain {
-            width: 160px;
-  margin-top: 50px;
-        }
-        .temp{
-            font-size: 4.5rem;
-  margin-bottom: 20px;
-        }
-        .city{
-            font-size: 2.2rem;
-  margin-bottom: 30px;
-        }
-        .humwind{
-            display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-family: "Madimi One", sans-serif;
-        }
-        .humid{
+body{
+    /* background-color: black; */
+    font-family: "Madimi One", sans-serif;
+    /* background: url('https://wallpapers.com/images/hd/aesthetic-cloud-7y2nw0b00k5t9pec.jpg'); */
+    /* background: url('/bg.mp4'); */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    z-index: -1;
+}
+.all{
+    display: flex;
+    justify-content: center;
+}
+video{
+position: relative;
+z-index: -2;
+top: 0px;
+background-size: cover;
+}
+
+pre{
+    font-family: "Madimi One", sans-serif;
+}
+.card{
+    position: absolute;
+     top: 0px;
+    z-index: 2;
+    width: 460px;
+    margin: 50px auto;
+    text-align: center;
+    /* margin-top: 100px; */
+    color: white;
+    /* background-color:#0f2862; */
+    /* background: url('https://wallpapers.com/images/hd/aesthetic-cloud-7y2nw0b00k5t9pec.jpg'); */
+    background: url(city.jpeg);
+    background-position:center center;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+}
+.searchbox{
+    display: flex;
+align-items: center;
+justify-content: space-around;
+/* position: fixed;
+z-index: 2; */
+}
+.searchbox input{
+    padding-left: 35px;
+padding-right: 35px;
+padding-top: 13px;
+padding-bottom: 13px;
+font-size: 20px;
+border-radius: 24px;
+margin-top: 20px;
+font-family: "Madimi One", sans-serif;
+margin-bottom: 10px;
+}
+.searchbox button{
+    padding: 10px;
+border-radius: 48px;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.searchbox button img{
+    width: 25px;
+height: 30px;
+}
+.error{
+    text-align: center;
+font-size: 2rem;
+margin-top: 15px;
+display: none;
+}
+.weather{
+    display: none;
+}
+.rain {
+    width: 160px;
+margin-top: 50px;
+}
+.temp{
+    font-size: 4.5rem;
+margin-bottom: 20px;
+}
+.city{
+    font-size: 2.2rem;
+margin-bottom: 30px;
+}
+.humwind{
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+font-family: "Madimi One", sans-serif;
+}
+.humid{
 display: flex;
 font-size: 1.2rem;
 margin-bottom: 20px;
 font-family: "Madimi One", sans-serif;
-        }
-        .humid img{
+}
+.humid img{
 width: 60px;
 height: 60px;
 margin-right: 10px;
-        }
-        .wind{
+}
+.wind{
 display: flex;
 font-size: 1.2rem;
 margin-bottom: 20px;
 font-family: "Madimi One", sans-serif;
-        }
-        .wind img{
-           width: 60px;
+}
+.wind img{
+   width: 60px;
 margin-right: 10px;
-        }
-    </style>
+}
+  </style>
 </head>
 <body>
     <div class="all">
-    <video src="/bg.mp4" autoplay loop muted  width="100%" ></video>
+    <video src="bg.mp4" autoplay loop muted  width="100%" ></video>
     <div class="card">
         <div class="searchbox">
             <input type="" name="" id="" placeholder="Enter the City">
-            <button><img src="/search.png" alt=""></button>
+            <button><img src="search.png" alt=""></button>
         </div>
         <div class="error">
             Invalid City !!
         </div>
         <div class="weather">
-        <img src="/rain.png" alt="" class="rain">
+        <img src="rain.png" alt="" class="rain">
          <div class="temp"></div>
          <div class="city">New York</div>
         <div class="humwind">
             <div class="humid">
-                <img src="/humidity.png" alt="">
+                <img src="humidity.png" alt="">
                  <div><p class="hum">50%</p>
                  <p>Humidity</p>
                  </div>
             </div>
             <div class="wind">
-                <img src="/wind.png" alt="">
+                <img src="wind.png" alt="">
                 <div><p class="win">15km/h</p>
                     <p>Wind speed</p>
                     </div>
@@ -164,50 +166,7 @@ margin-right: 10px;
     </div>
 </div>
     <!-- https://api.openweathermap.org/data/2.5/weather?q=imphal&appid=70a30bf9a0bfae5806b8115e8ba2937b&units=metric -->
-    <script>
-        const apikey="70a30bf9a0bfae5806b8115e8ba2937b";
-        const apilink=" https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-        const searchbox=document.querySelector(".card .searchbox input");
-        const searchbtn=document.querySelector(".card .searchbox button");
-        const weathericon=document.querySelector(".rain");
-        async function check(city){
-            const response =await fetch(apilink+city+`&appid=${apikey}`);
-            if(response.status==404){
-                document.querySelector(".error").style.display="block";
-                document.querySelector(".weather").style.display="none";
-            }
-            else{
-                var data=await response.json();
-            console.log(data);
-           document.querySelector(".city").innerHTML=data.name; 
-           document.querySelector(".temp").innerHTML=Math.round(data.main.temp) +"°C";
-           document.querySelector(".hum").innerHTML=data.main.humidity +"%"; 
-           document.querySelector(".win").innerHTML=data.wind.speed +"km/h";
-           if(data.weather[0].main=="Clouds"){
-            weathericon.src="/clouds.png"
-           }
-           else if(data.weather[0].main=="Clear"){
-            weathericon.src="/clear.png"
-           }
-           else if(data.weather[0].main=="Rain"){
-            weathericon.src="/rain.png"
-           }
-           else if(data.weather[0].main=="Mist"){
-            weathericon.src="/mist.png"
-           }
-           else if(data.weather[0].main=="Drizzle"){
-            weathericon.src="/drizzle.png"
-           }
-           document.querySelector(".weather").style.display="block";
-           document.querySelector(".error").style.display="none";
-            }
-            
-        }
-        searchbtn.addEventListener("click",()=>{
-            check(searchbox.value);
-        })
-
-    </script>
+   <script src="p1.js"></script>
 </body>
 </html>
 
